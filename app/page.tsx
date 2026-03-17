@@ -161,76 +161,79 @@ export default function App() {
 
       {/* EXPERIENCE SECTION */}
       <Reveal>
-        <section id="experience" className="py-12 px-4 md:px-6 max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black mb-8 tracking-tighter uppercase flex items-center gap-4">
-            <Briefcase className="text-blue-600" /> Professional Path
-          </h2>
-          <div className="relative border-l-2 border-white/10 ml-4 pl-8 md:pl-12">
-            <div className="relative group">
-              <div className="absolute -left-[43px] md:-left-[57px] top-0 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)]"></div>
-              <div className="bg-[#0f0f14] p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all shadow-sm hover:shadow-[0_20px_50px_rgba(37,99,235,0.05)]">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-black tracking-tight group-hover:text-blue-600 transition-colors">ServiceNow - Trainee</h3>
-                    <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mt-1">ITSM & Automation</p>
-                  </div>
-                  <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500 w-fit">
-                    June 2025 - July 2025
-                  </span>
-                </div>
-                <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-slate-400 font-medium text-sm leading-relaxed">
-                  <li className="flex gap-3">
-                    <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Developed skills in ITSM, Flow Designer, and CMDB.</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
-                    <span>Built and managed scoped apps using Studio and IntegrationHub.</span>
-                  </li>
-                </ul>
+<section id="experience" className="py-12 px-4 md:px-6 max-w-7xl mx-auto">
+      {/* Section Header */}
+      <h2 className="text-3xl md:text-4xl font-black mb-12 tracking-tighter uppercase flex items-center gap-4">
+        <Briefcase className="text-blue-600" size={32} /> Professional Path
+      </h2>
+
+      {/* Timeline Container */}
+      <div className="relative border-l-2 border-white/10 ml-4 pl-8 md:pl-12 space-y-12">
+        
+        {/* Experience 1: Deloitte */}
+        <div className="relative group">
+          {/* Timeline Dot */}
+          <div className="absolute -left-[41px] md:-left-[57px] top-2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)] z-10"></div>
+          
+          <div className="bg-[#0f0f14] p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all shadow-sm hover:shadow-[0_20px_50px_rgba(37,99,235,0.05)]">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
+              <div>
+                <h3 className="text-xl md:text-2xl font-black tracking-tight group-hover:text-blue-600 transition-colors">
+                  Deloitte India — Engineer Intern
+                </h3>
+                <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mt-1">Full Stack Development</p>
               </div>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500 w-fit">
+                Jan 2026 - Jun 2026
+              </span>
             </div>
+            
+            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-slate-400 font-medium text-sm leading-relaxed">
+              <li className="flex gap-3">
+                <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+                <span>Built full-stack applications using React, Next.js, Node.js, Spring Boot, and .NET.</span>
+              </li>
+              <li className="flex gap-3">
+                <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+                <span>Worked with SQL, MongoDB, and Docker to develop scalable and containerized systems.</span>
+              </li>
+            </ul>
           </div>
-          <div className="relative group mt-10">
-  <div className="absolute -left-[43px] md:-left-[57px] top-0 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)]"></div>
-  
-  <div className="bg-[#0f0f14] p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all shadow-sm hover:shadow-[0_20px_50px_rgba(37,99,235,0.05)]">
-    
-    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
-      <div>
-        <h3 className="text-xl md:text-2xl font-black tracking-tight group-hover:text-blue-600 transition-colors">
-          Deloitte India - Engineer Intern
-        </h3>
-        <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mt-1">
-          Full Stack Development
-        </p>
+        </div>
+
+        {/* Experience 2: ServiceNow */}
+        <div className="relative group">
+          {/* Timeline Dot */}
+          <div className="absolute -left-[41px] md:-left-[57px] top-2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)] z-10"></div>
+          
+          <div className="bg-[#0f0f14] p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all shadow-sm hover:shadow-[0_20px_50px_rgba(37,99,235,0.05)]">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
+              <div>
+                <h3 className="text-xl md:text-2xl font-black tracking-tight group-hover:text-blue-600 transition-colors">
+                  ServiceNow — Trainee
+                </h3>
+                <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mt-1">ITSM & Automation</p>
+              </div>
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500 w-fit">
+                June 2025 - July 2025
+              </span>
+            </div>
+            
+            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-slate-400 font-medium text-sm leading-relaxed">
+              <li className="flex gap-3">
+                <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+                <span>Developed skills in ITSM, Flow Designer, and CMDB.</span>
+              </li>
+              <li className="flex gap-3">
+                <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+                <span>Built and managed scoped apps using Studio and IntegrationHub.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      
-      <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500 w-fit">
-        Jan 2026 - Jun 2026
-      </span>
-    </div>
-
-    <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-slate-400 font-medium text-sm leading-relaxed">
-      
-      <li className="flex gap-3">
-        <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
-        <span>
-          Built full-stack applications using React, Next.js, Node.js, Spring Boot, and .NET.
-        </span>
-      </li>
-
-      <li className="flex gap-3">
-        <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
-        <span>
-          Worked with SQL, MongoDB, and Docker to develop scalable and containerised systems.
-        </span>
-      </li>
-
-    </ul>
-  </div>
-</div>
-        </section>
+    </section>
       </Reveal>
 
       {/* TECHNICAL ARSENAL */}
