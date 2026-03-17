@@ -191,6 +191,45 @@ export default function App() {
               </div>
             </div>
           </div>
+          <div className="relative group mt-10">
+  <div className="absolute -left-[43px] md:-left-[57px] top-0 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 group-hover:scale-125 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)]"></div>
+  
+  <div className="bg-[#0f0f14] p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all shadow-sm hover:shadow-[0_20px_50px_rgba(37,99,235,0.05)]">
+    
+    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
+      <div>
+        <h3 className="text-xl md:text-2xl font-black tracking-tight group-hover:text-blue-600 transition-colors">
+          Deloitte India - Engineer Intern
+        </h3>
+        <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mt-1">
+          Full Stack Development
+        </p>
+      </div>
+      
+      <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[10px] font-black uppercase tracking-widest text-slate-500 w-fit">
+        Jan 2026 - Jun 2026
+      </span>
+    </div>
+
+    <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-slate-400 font-medium text-sm leading-relaxed">
+      
+      <li className="flex gap-3">
+        <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+        <span>
+          Built full-stack applications using React, Next.js, Node.js, Spring Boot, and .NET.
+        </span>
+      </li>
+
+      <li className="flex gap-3">
+        <ChevronRight size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+        <span>
+          Worked with SQL, MongoDB, and Docker to develop scalable and containerised systems.
+        </span>
+      </li>
+
+    </ul>
+  </div>
+</div>
         </section>
       </Reveal>
 
@@ -302,7 +341,7 @@ export default function App() {
                 </div>
                 <div className="mt-8 pt-8 border-t border-white/10 flex flex-col items-center justify-center text-center">
                    <p className="text-[10px] font-black uppercase opacity-60 mb-2">Academic Performance</p>
-                   <p className="text-4xl font-black tracking-tighter text-blue-600">9.05 <span className="text-sm opacity-60 text-white font-black">CGPA</span></p>
+                   <p className="text-4xl font-black tracking-tighter text-blue-600">9.17 <span className="text-sm opacity-60 text-white font-black">CGPA</span></p>
                 </div>
              </div>
 
